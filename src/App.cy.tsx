@@ -2,7 +2,7 @@ import React from 'react'
 import App from './App'
 
 describe('<App />', () => {
-  it('renders', () => {
+  it('renders and check select all', () => {
     // see: https://on.cypress.io/mounting-react
     cy.mount(<App />)
     cy.get('[data-cy="select-all"]').check() 
